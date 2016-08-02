@@ -20,7 +20,7 @@
 		}
 
 		&.major {
-			border: solid 1px;
+			border: solid 10px;
 			display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
@@ -34,7 +34,7 @@
 				height: 2.25em;
 				line-height: 2.2em;
 				border-radius: 100%;
-				border: solid 1px;
+				border: solid 0px;
 				text-align: center;
 			}
 		}
@@ -105,7 +105,8 @@
 	@mixin color-icon($p: null) {
 		.icon {
 			&.major {
-				border-color: _palette($p, border);
+				border-color:  _palette(accent3);
+				background-color: _palette(accent2);
 
 				&:before {
 					border-color: _palette($p, border);

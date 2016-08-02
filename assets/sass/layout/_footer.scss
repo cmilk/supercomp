@@ -25,6 +25,10 @@
 			text-align: center;
 		}
 
+		.icons {
+			text-align: center;
+		}
+
 		@include breakpoint(large) {
 			@include padding(4em, 4em);
 		}

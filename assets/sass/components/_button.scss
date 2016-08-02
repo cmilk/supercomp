@@ -21,7 +21,7 @@
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight);
-		height: 2.75em;
+		// height: 2.75em;
 		line-height: 2.75em;
 		min-width: 9.25em;
 		padding: 0 1.5em;
@@ -69,11 +69,12 @@
 		button,
 		.button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 1px _palette($p, border);
-			color: _palette($p, fg-bold) !important;
+			// box-shadow: inset 0 0 0 2px _palette(accent3);
+			border: 2px solid _palette(accent3);
+			color: _palette(accent3) !important;
 
 			&:hover {
-				background-color: _palette($p, border-bg);
+				background-color: _palette(accent2);
 			}
 
 			&:active {
