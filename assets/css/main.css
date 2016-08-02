@@ -1213,10 +1213,10 @@ body {
 
 body {
   background-color: #A7E1F2;
-  background-image: -moz-linear-gradient(45deg, #06B1E5 15%, #B4BBFF 85%);
-  background-image: -webkit-linear-gradient(45deg, #06B1E5 15%, #B4BBFF 85%);
-  background-image: -ms-linear-gradient(45deg, #06B1E5 15%, #B4BBFF 85%);
-  background-image: linear-gradient(45deg, #06B1E5 15%, #B4BBFF 85%); }
+  background-image: -moz-linear-gradient(45deg, #5864cc 15%, #B4BBFF 85%);
+  background-image: -webkit-linear-gradient(45deg, #5864cc 15%, #B4BBFF 85%);
+  background-image: -ms-linear-gradient(45deg, #5864cc 15%, #B4BBFF 85%);
+  background-image: linear-gradient(45deg, #5864cc 15%, #B4BBFF 85%); }
   body.is-loading *, body.is-loading *:before, body.is-loading *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
@@ -1768,7 +1768,7 @@ input[type="radio"]:focus + label:before {
       text-align: center;
       line-height: 2em; }
   .icon.style1 {
-    color: #6e7dff; }
+    color: #5864cc; }
   .icon.style2 {
     color: #ffdc1f; }
   .icon.style3 {
@@ -2118,7 +2118,7 @@ table.alt tbody tr td {
     color: #ffffff;
     text-align: center; }
     .statistics li.style1 {
-      background-color: #6e7dff; }
+      background-color: #5864cc; }
     .statistics li.style2 {
       background-color: #ffdc1f; }
     .statistics li.style3 {
