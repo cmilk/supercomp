@@ -4,10 +4,10 @@
 		<title>Stellar by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 8]><script src="dist/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="dist/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="dist/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="dist/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -16,7 +16,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<span class="logo"><img src="dist/images/logo.svg" alt="" /></span>
 						<h1>Super-comp</h1>
 						<p>Ремонт компьютеров и ноутбуков в Челябинске</p>
 					</header>
@@ -55,11 +55,6 @@
 										<p>Мы готовы провести полную диагностику вашей системы абсолютно бесплатно!</p>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Second Section -->
@@ -72,15 +67,18 @@
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
+										<strong><span>от <span id="firstService"></span> руб</span></strong>
+										Etiam
 									</li>
 									<li class="style2">
 										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
+										<strong><span>от <span id="secondService"></span> руб</span></strong>
+										Magna
 									</li>
 									<li class="style3">
 										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
+										<strong><span>от <span id="thirdService"></span> руб</span></strong>
+										Tempus
 									</li>
 								</ul>
 								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
@@ -91,7 +89,7 @@
 									<header class="major">
 										<h2>Супер призыв</h2>
 									</header>
-									<form method="post" action="#">
+									<form action="https://formspree.io/yeltsov.il@ya.ru" method="POST">
 										<div class="row uniform">
 											<div class="6u 12u$(xsmall)">
 												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Как вас зовут?" />
@@ -100,18 +98,16 @@
 												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Ваша почта?" />
 											</div>
 											<div class="12u$">
-												<textarea name="demo-message" id="demo-message" placeholder="Ваше послание" rows="6"></textarea>
+												<textarea name="demo-message" id="demo-message" placeholder="Ваш призыв о помощи" rows="6"></textarea>
 											</div>
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Призыв!" class="button" /></li>
-													<!-- <li><input type="reset" value="Reset" /></li> -->
+													<li><input type="submit" value="Призыв!" class="button"/></li>
 												</ul>
 											</div>
 										</div>
 									</form>
 								</section>
-
 					</div>
 
 				<!-- Footer -->
@@ -126,13 +122,16 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="src/js/jquery.min.js"></script>
+			<script src="src/js/jquery.scrollex.min.js"></script>
+			<script src="src/js/jquery.scrolly.min.js"></script>
+			<script src="src/js/skel.min.js"></script>
+			<script src="src/js/util.js"></script>
+			<script src="src/js/countUp.min.js"></script>
+			<script src="src/js/jquery.waypoints.min.js"></script>
+			<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
+			<script src="src/js/main.js"></script>
+			<!-- <script src="dist/js/build.js"></script> -->
 
 	</body>
 </html>
