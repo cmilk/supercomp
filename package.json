@@ -18,14 +18,17 @@
   "homepage": "https://github.com/yeltsov/supercomp#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^3.0.2",
-    "gulp-pug": "^3.0.3",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "imagemin-gifsicle": "*",
     "imagemin-jpegtran": "*",
     "imagemin-optipng": "*",
     "imagemin-svgo": "*"
+  },
+  "dependencies": {
+    "countup.js": "^1.7.1",
+    "jquery": "^3.1.0",
+    "waypoints": "^4.0.0"
   }
 }
