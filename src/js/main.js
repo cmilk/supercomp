@@ -30,9 +30,9 @@
 	// });
 
 	var nav = $('#nav');
+	var pos = nav.position().top;
 	$(window).scroll(function () {
-			if ($(this).scrollTop() > 638) {
-					console.dir(nav);
+			if ($(this).scrollTop() > pos) {
 					nav.addClass("alt");
 			} else {
 					nav.removeClass("alt");
