@@ -8,14 +8,43 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+		.cloud {
+		     animation: kaboom 5s  infinite;
+		     animation-delay: 0.1s;
+		}
+
+		@keyframes kaboom {
+			0% {
+			  transform: translateX(-600px);
+			  opacity: 0;
+			}
+			10% {
+			  opacity: 1;
+			}
+			90% {
+			  opacity: 1;
+			}
+			100% {
+			  opacity: 0;
+			  transform: translateX(800px);
+			}
+		}
+		</style>
 	</head>
+
 	<body>
 
+	<script type="text/javascript">
+		var cloud = document.getElementById("cloud");
+		console.log(cloud);
+	</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
+						<object data="images/cloud.svg"></object> 
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1>Super-comp</h1>
 						<p>Ремонт компьютеров и ноутбуков в Челябинске</p>
@@ -40,26 +69,21 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon major style3 fa-code"></span>
+										<span class="icon major style3 fa-calendar"></span>
 										<h3>Сверх выносливость</h3>
 										<p>Героям не нужен отдых! Поэтому мы готовы вам помочь 7 дней в неделю!</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-copy"></span>
+										<span class="icon major style3 fa-fighter-jet"></span>
 										<h3>Сверх скорость</h3>
 										<p>Мы оперативно приходим к вам на помощь в трудных ситуациях.</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-diamond"></span>
+										<span class="icon major style3 fa-eye"></span>
 										<h3>Рентгеновское зрение</h3>
 										<p>Мы готовы провести полную диагностику вашей системы абсолютно бесплатно!</p>
 									</li>
 								</ul>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 						<!-- Second Section -->
@@ -84,11 +108,6 @@
 									</li>
 								</ul>
 								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
 							</section>
 
 							<!-- Form -->
