@@ -23,19 +23,4 @@ gulp.task('imagemin', () =>
       .pipe(gulp.dest('dist/images'))
 );
 
-var concat = require('gulp-concat');
-
-gulp.task('scripts', function() {
-  gulp.src(['./src/js/jquery.min.js',
-           './src/js/jquery.scrollex.js',
-           './src/js/jquery.scrolly.js',
-           './src/js/jquery.waypoints.js',
-           './src/js/countUp.min.js',
-           './src/js/skel.min.js',
-           './src/js/util.js',
-           './src/js/main.js'])
-    .pipe(concat('build.js'))
-    .pipe(gulp.dest('./dist/js/'));
-});
-
-gulp.task('default', ['imagemin', 'scripts', 'sass', 'sass:watch']);
+gulp.task('default', ['imagemin', 'sass', 'sass:watch']);
