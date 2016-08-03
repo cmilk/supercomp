@@ -4,48 +4,21 @@
 		<title>Stellar by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<style>
-		.cloud {
-		     animation: kaboom 5s  infinite;
-		     animation-delay: 0.1s;
-		}
-
-		@keyframes kaboom {
-			0% {
-			  transform: translateX(-600px);
-			  opacity: 0;
-			}
-			10% {
-			  opacity: 1;
-			}
-			90% {
-			  opacity: 1;
-			}
-			100% {
-			  opacity: 0;
-			  transform: translateX(800px);
-			}
-		}
-		</style>
+		<link rel="stylesheet" href="dist/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"><!-- 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
 	</head>
 
 	<body>
 
-	<script type="text/javascript">
-		var cloud = document.getElementById("cloud");
-		console.log(cloud);
-	</script>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<object data="images/cloud.svg"></object> 
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
+						<span class="logo animated bounceInRight"><img src="dist/images/logo.svg" alt="" /></span>
+<!-- 						<object class="logo" id="logo" type="image/svg+xml" data="dist/images/logo.svg"></object> -->
 						<h1>Super-comp</h1>
 						<p>Ремонт компьютеров и ноутбуков в Челябинске</p>
 					</header>
@@ -96,15 +69,18 @@
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
+										<strong><span>от <span id="firstService"></span> руб</span></strong>
+										Etiam
 									</li>
 									<li class="style2">
 										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
+										<strong><span>от <span id="secondService"></span> руб</span></strong>
+										Magna
 									</li>
 									<li class="style3">
 										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
+										<strong><span>от <span id="thirdService"></span> руб</span></strong>
+										Tempus
 									</li>
 								</ul>
 								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
@@ -112,28 +88,28 @@
 
 							<!-- Form -->
 								<section id="feedback" class="main special">
-									<h2>Супер призыв</h2>
-									<form method="post" action="#">
+									<header class="major">
+										<h2>Супер призыв</h2>
+									</header>
+									<form action="https://formspree.io/yeltsov.il@ya.ru" method="POST">
 										<div class="row uniform">
 											<div class="6u 12u$(xsmall)">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Как вас зовут?" />
 											</div>
 											<div class="6u$ 12u$(xsmall)">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Ваша почта?" />
 											</div>
 											<div class="12u$">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												<textarea name="demo-message" id="demo-message" placeholder="Ваш призыв о помощи" rows="6"></textarea>
 											</div>
 											<div class="12u$">
 												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="special" /></li>
-													<!-- <li><input type="reset" value="Reset" /></li> -->
+													<li><input type="submit" value="Призыв!" class="button"/></li>
 												</ul>
 											</div>
 										</div>
 									</form>
 								</section>
-
 					</div>
 
 				<!-- Footer -->
@@ -148,13 +124,44 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<script src="src/js/jquery.min.js"></script>
+			<!-- <script src="src/js/jquery.scrollex.min.js"></script> -->
+			<!-- <script src="src/js/jquery.scrolly.min.js"></script> -->
+			<!-- <script src="src/js/skel.min.js"></script> -->
+			<!-- <script src="src/js/util.js"></script> -->
+			<script src="src/js/countUp.min.js"></script>
+			<script src="src/js/jquery.waypoints.min.js"></script>
+			<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
+			<script src="src/js/main.js"></script>
+			<!-- <script src="dist/js/build.js"></script> -->
+<!-- 			<script type="text/javascript">
+				var mySVG = document.getElementById("logo");
+				var svgDoc;
+				mySVG.addEventListener("load", ()=> {
+				     svgDoc = mySVG.contentDocument;
+				     var clouds=[];
+				     clouds.push(svgDoc.getElementById("cloud_1"));
+				     clouds.push(svgDoc.getElementById("cloud_2"));
+				     clouds.push(svgDoc.getElementById("cloud_3"));
 
+				     console.log(svgDoc);
+				     clouds.map((cloud)=>{
+				     	var tl = new TimelineMax({repeat: -1});
+					     tl.set(cloud, {
+							x: -1000,
+							alpha: 0,
+							ease:Linear.easeNone })
+					     .to(cloud, 3, {
+					     	x:0,
+							alpha: 1,
+							ease:Linear.easeNone })
+					     .to(cloud, 6, {
+							x: 1000, 
+							alpha: 0,
+							ease:Linear.easeNone });
+					 	})
+				     
+				}, false);
+			</script> -->
 	</body>
 </html>
