@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Stellar by HTML5 UP</title>
+		<title>Super Comp</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="dist/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"><!-- 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 	</head>
 
 	<body>
@@ -17,9 +19,8 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo animated bounceInRight"><img src="dist/images/logo.svg" alt="" /></span>
-<!-- 						<object class="logo" id="logo" type="image/svg+xml" data="dist/images/logo.svg"></object> -->
-						<h1 class="animated bounceInLeft">Super-comp</h1>
+						<span class="logo animated fadeInRight"><img src="dist/images/logo.svg" alt="" /></span>
+						<h1 class="animated fadeInLeft">Super-comp</h1>
 						<p class="animated fadeIn">Ремонт компьютеров и ноутбуков в Челябинске</p>
 					</header>
 
@@ -42,7 +43,7 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon major style3 fa-calendar animated bounceInLeft"></span>
+										<span class="icon major style3 fa-calendar animated fadeInLeft"></span>
 										<h3>Сверх выносливость</h3>
 										<p>Героям не нужен отдых! Поэтому мы готовы вам помочь 7 дней в неделю!</p>
 									</li>
@@ -52,7 +53,7 @@
 										<p>Мы оперативно приходим к вам на помощь в трудных ситуациях.</p>
 									</li>
 									<li>
-										<span class="icon major style3 fa-eye animated bounceInRight"></span>
+										<span class="icon major style3 fa-eye animated fadeInRight"></span>
 										<h3>Рентгеновское зрение</h3>
 										<p>Мы готовы провести полную диагностику вашей системы абсолютно бесплатно!</p>
 									</li>
@@ -124,38 +125,6 @@
 
 		<!-- Scripts -->
 			<!--[if lte IE 8]><script src="dist/js/ie/respond.min.js"></script><![endif]-->
-			<!-- <script src="dist/js/build.js"></script> -->
-<!-- 			<script type="text/javascript">
-				var mySVG = document.getElementById("logo");
-				var svgDoc;
-				mySVG.addEventListener("load", ()=> {
-				     svgDoc = mySVG.contentDocument;
-				     var clouds=[];
-				     clouds.push(svgDoc.getElementById("cloud_1"));
-				     clouds.push(svgDoc.getElementById("cloud_2"));
-				     clouds.push(svgDoc.getElementById("cloud_3"));
-
-				     console.log(svgDoc);
-				     clouds.map((cloud)=>{
-				     	var tl = new TimelineMax({repeat: -1});
-					     tl.set(cloud, {
-							x: -1000,
-							alpha: 0,
-							ease:Linear.easeNone })
-					     .to(cloud, 3, {
-					     	x:0,
-							alpha: 1,
-							ease:Linear.easeNone })
-					     .to(cloud, 6, {
-							x: 1000, 
-							alpha: 0,
-							ease:Linear.easeNone });
-					 	})
-				     
-				}, false);
-			</script> -->
-
 			<script src="dist/js/bundle.js"></script>
-<!-- 			<span class="futer"><img src="dist/images/vilage.svg" alt="" /></span> -->
 	</body>
 </html>
