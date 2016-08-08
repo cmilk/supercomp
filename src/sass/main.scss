@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
-@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:400,300&subset=latin,cyrillic';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic';
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
